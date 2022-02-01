@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
-import dataReducer from './Data';
 import thunk from 'redux-thunk';
+import dataReducer from './Data';
 
 const reducer = combineReducers({
   dataReducer,

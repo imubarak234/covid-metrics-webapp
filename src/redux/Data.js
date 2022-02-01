@@ -8,12 +8,12 @@ export const addData = (payload) => ({
 });
 
 const dataReducer = (state = initialState, action) => {
-  switch (action.type){
+  switch (action.type) {
     case ADD_DATA:
       return [...state, action.payload];
     default:
       return state;
   }
-}
+};
 
 export default dataReducer;

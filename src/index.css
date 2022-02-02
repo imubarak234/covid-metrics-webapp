@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  background-color: #4369b2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.navigator {
+  color: white;
+}
+
+#main-img {
+  width: 10em;
+}
+
+.main-land {
+  background-color: #5586e2;
+  height: 15vh;
+}
+
+.mid-section {
+  background-color: #35548b;
+}
+
+.con-sec a img {
+  width: 8em;
+}
+
+.con-sec .odd-sec a,
+.con-sec .even-sec a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.con-sec .odd-sec i,
+.con-sec .even-sec i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.con-sec .odd-sec {
+  background-color: #4369b0;
+}
+
+.con-sec .even-sec {
+  background-color: #3f62a4;
+}
+
+.con-sec .odd-sec,
+.con-sec .even-sec {
+  height: 18vh;
 }

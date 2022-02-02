@@ -5,12 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4369b2;
+  color: white;
 }
 
 body,
 html {
   height: 100%;
+}
+
+#root {
+  background-color: #4369b2;
 }
 
 * {
@@ -26,4 +30,17 @@ code {
 
 .navigator {
   color: white;
+}
+
+#main-img {
+  width: 10em;
+}
+
+.main-land {
+  background-color: #5586e2;
+  height: 15vh;
+}
+
+.mid-section {
+  background-color: #35548b;
 }

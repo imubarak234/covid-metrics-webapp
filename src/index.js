@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import CountryPage from './Components/Country/Country-page';
 import Naving from './Components/Navbar';
 import Home from './Components/Home';
 import store from './redux/configureStore';
@@ -14,6 +15,7 @@ ReactDOM.render(
         <Naving />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/country" element={<CountryPage />} />
         </Routes>
       </Router>
     </React.StrictMode>

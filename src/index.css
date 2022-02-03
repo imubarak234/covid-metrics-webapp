@@ -78,13 +78,18 @@ code {
   right: 0;
 }
 
-.con-sec .odd-sec {
+.con-sec .odd-sec,
+.listing .odd-sec {
   background-color: #4369b0;
+  border-color: #4369b0;
 }
 
-.con-sec .even-sec {
+.con-sec .even-sec,
+.listing .even-sec {
   background-color: #3f62a4;
+  border-color: #3f62a4;
 }
+
 
 .con-sec .odd-sec,
 .con-sec .even-sec {

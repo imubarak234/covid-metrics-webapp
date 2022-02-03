@@ -15,6 +15,6 @@ const store = createStore(
   applyMiddleware(logger, thunk),
 );
 
-store.dispatch(addFresh(data));
+for (let x = 0; x < data.length; x += 1) store.dispatch(addFresh(data[x]));
 
 export default store;

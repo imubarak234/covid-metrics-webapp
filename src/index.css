@@ -95,3 +95,9 @@ code {
 .con-sec .even-sec {
   height: 18vh;
 }
+
+#tops {
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}

@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div>
       <div className="mid-section">
-        <p>STATS BY CONTINENTS</p>
+        <p className="m-0">STATS BY CONTINENTS</p>
       </div>
       <div className="con-sec container-fluid">
         <div className="row">

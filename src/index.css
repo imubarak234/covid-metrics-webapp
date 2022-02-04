@@ -24,6 +24,7 @@ html {
 
 #root {
   background-color: #4369b2;
+  height: 100%;
 }
 
 * {
@@ -89,7 +90,6 @@ code {
   background-color: #3f62a4;
   border-color: #3f62a4;
 }
-
 
 .con-sec .odd-sec,
 .con-sec .even-sec {

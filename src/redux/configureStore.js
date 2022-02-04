@@ -1,9 +1,10 @@
 /* eslint-disable no-restricted-syntax */
+/* eslint-disable no-console */
 
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import dataReducer, { addData } from './Data';
+import dataReducer, { addData, selecting } from './Data';
 import refreshReducer, { addFresh } from './Refresh/Refresh';
 import data from './Refresh/RefreshData';
 
@@ -25,9 +26,8 @@ const sort = (obj) => {
   for (const i in newObj) {
     if ((typeof newObj[i]) === 'object') {
       const newerObj = {
-        [i]: {
-          ...newObj[i],
-        },
+        picked: false,
+        ...newObj[i],
       };
       ans.push(newerObj);
     }
@@ -39,9 +39,13 @@ export const fetchData = async () => {
   await fetch('https://api.covid19tracking.narrativa.com/api/2022-01-30')
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       const newData = sort(data);
       newData.map((next) => store.dispatch(addData(next)));
+      store.dispatch(selecting('Albania'));
     });
 };
+
+fetchData();
 
 export default store;

@@ -10,6 +10,7 @@ const CountryItems = (props) => {
   return (
     <NavLink to="/region" className={classes} onClick={() => fund(names)}>
       {names}
+      <i className="bi bi-arrow-right-circle" />
     </NavLink>
   );
 };

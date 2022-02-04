@@ -1,16 +1,18 @@
+/* eslint-disable no-console */
 import React from 'react';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Naving = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
+  // console.log(history);
   return (
     <div className="navs navigator">
       <nav className="navbar navbar-expand">
         <div className="container-fluid d-flex justify-content-between">
-          <NavLink className="navbar-brand navigator w-25" to="/" onClick={() => history.goBack()}>
+          <button className="navbar-brand navigator w-25" type="button" id="tops" onClick={() => navigate(-1)}>
             <i className="bi bi-chevron-left navigator" />
-            2022
-          </NavLink>
+              2022
+            </button>
           <div className="w-25 d-flex align-items-end">
             <p className="text-nowrap m-0">COVID Metrics</p>
           </div>

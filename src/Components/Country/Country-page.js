@@ -10,8 +10,6 @@ const CountryPage = () => {
 
   const newState = states.filter((next) => next.picked);
 
-  console.log(newState);
-
   let count = 0;
 
   const dispatch = useDispatch();
@@ -37,10 +35,6 @@ const CountryPage = () => {
     else if (args === 'North America') ans = '/assets/images/North America.png';
     return ans;
   };
-
-  // const photo2 = require('../images/Africa.png').default;
-
-  console.log(photo(newState[0].continent));
 
   return (
     <div>

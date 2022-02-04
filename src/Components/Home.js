@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink } from 'react-router-dom';
 import React from 'react';
-import { useSelector, shallowEqual, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import world from './images/worldMap.png';
 import asia from './images/Asia.png';
 import africa from './images/Africa.png';
@@ -13,17 +13,13 @@ import ocean from './images/Oceania.png';
 import { select } from '../redux/Refresh/Refresh';
 
 const Home = () => {
-  const states = useSelector((state) => state.refreshReducer, shallowEqual);
+  // const states = useSelector((state) => state.refreshReducer, shallowEqual);
 
   const dispatch = useDispatch();
 
   const changes = (args) => {
     dispatch(select(args));
   };
-  //  dispatch(select('Africa'));
-
-  console.log(states);
-  console.log('Tesing...........');
 
   return (
     <div>

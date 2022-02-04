@@ -16,22 +16,6 @@ export const select = (payload) => ({
   payload,
 });
 
-// const sort = (next, args) => {
-//   const ans = [];
-//   for (const i in next) {
-//     if ((typeof next[i]) === 'object') {
-//       console.log(next[i]);
-//       next[i][0] = false;
-//       if (i === args) next[i][0] = true;
-//       const newObj = { i: next[i] };
-//       ans.push(newObj);
-//     }
-//   }
-//   console.log('ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp');
-//   console.log(ans);
-//   return ans;
-// };
-
 const refreshReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_DATA:

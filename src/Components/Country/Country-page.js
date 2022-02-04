@@ -1,14 +1,9 @@
 /* eslint-disable no-console */
 
 import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
+import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import CountryItems from './CountryItems';
-// import africa from '../images/Africa.png';
-// import asia from '../images/Asia.png';
-// import euro from '../images/Europe.png';
-// import south from '../images/South America.png';
-// import north from '../images/North America.png';
-// import ocean from '../images/Oceania.png';
+import { selecting } from '../../redux/Data';
 
 const CountryPage = () => {
   const states = useSelector((state) => state.refreshReducer, shallowEqual);
@@ -18,6 +13,12 @@ const CountryPage = () => {
   console.log(newState);
 
   let count = 0;
+
+  const dispatch = useDispatch();
+
+  const fresh = (args) => {
+    dispatch(selecting(args));
+  };
 
   const changes = (next) => {
     let ans = '';
@@ -52,7 +53,7 @@ const CountryPage = () => {
         </div>
       </div>
       <div className="mid-section">
-        <p>STATS BY COUNTRY</p>
+        <p className="m-0">STATS BY COUNTRY</p>
       </div>
       <div className="list-group listing">
         {
@@ -64,6 +65,7 @@ const CountryPage = () => {
                 key={next}
                 names={next}
                 classes={changes(count)}
+                fund={fresh}
               />
             );
           })

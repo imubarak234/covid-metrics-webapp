@@ -216,7 +216,7 @@ const data = [
       'Trinidad and Tobago',
       'Uruguay',
       'Venezuela'],
-    picked: true,
+    picked: false,
   },
 ];
 

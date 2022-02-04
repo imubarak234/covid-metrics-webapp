@@ -9,7 +9,15 @@ const Region = () => {
 
   let count = 0;
   const newState = states.filter((next) => next.picked);
-  const newerState = newState[0];
+
+  let newerState = newState[0];
+
+  if (newerState === undefined) {
+    newerState = {
+      name: 'testing',
+      regions: [],
+    };
+  }
 
   const changes = (next) => {
     let ans = '';
@@ -17,7 +25,7 @@ const Region = () => {
     else ans = 'odd-sec list-group-item list-group-item-action';
     return ans;
   };
-  console.log(newState);
+
   return (
     <div>
       <div className="main-land d-flex">

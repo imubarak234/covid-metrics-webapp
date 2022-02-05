@@ -1,5 +1,4 @@
 /* eslint-disable no-restricted-syntax */
-/* eslint-disable no-console */
 
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
@@ -39,7 +38,6 @@ export const fetchData = async () => {
   await fetch('https://api.covid19tracking.narrativa.com/api/2022-01-30')
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       const newData = sort(data);
       newData.map((next) => store.dispatch(addData(next)));
       store.dispatch(selecting('Albania'));

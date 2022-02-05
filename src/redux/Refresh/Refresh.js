@@ -1,6 +1,3 @@
-/* eslint-disable no-restricted-syntax */
-/* eslint-disable no-param-reassign */
-/* eslint-disable no-console */
 const ADD_DATA = 'covid-metrics-webapp/Refresh/ADD_DATA';
 const SELECT = 'covid-metrics-webapp/Refresh/SELECT';
 

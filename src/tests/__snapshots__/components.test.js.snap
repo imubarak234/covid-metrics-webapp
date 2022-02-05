@@ -1,0 +1,486 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Series of tests rendering of each major components Rendering Country page correctly 1`] = `
+<div>
+  <div
+    className="main-land d-flex"
+  >
+    <div
+      className="w-50"
+    >
+      <img
+        alt="world map"
+        id="main-img"
+        src="/assets/images/South America.png"
+      />
+    </div>
+    <div
+      className="w-50 d-flex flex-column justify-content-center"
+    >
+      <h2>
+        South America
+      </h2>
+    </div>
+  </div>
+  <div
+    className="mid-section"
+  >
+    <p
+      className="m-0"
+    >
+      STATS BY COUNTRY
+    </p>
+  </div>
+  <div
+    className="list-group listing"
+  >
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Argentina
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Bolivia
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Brazil
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Chile
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Colombia
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Ecuador
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Guyana
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Paraguay
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Peru
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Suriname
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Trinidad and Tobago
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="even-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Uruguay
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+    <a
+      className="odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4"
+      href="/region"
+      onClick={[Function]}
+    >
+      Venezuela
+      <i
+        className="bi bi-arrow-right-circle"
+      />
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components Rendering Home page correctly 1`] = `
+<div>
+  <div
+    className="main-land d-flex"
+  >
+    <div
+      className="w-50 d-flex align-content-center"
+    >
+      <img
+        alt="world map"
+        id="main-img"
+        src="worldMap.png"
+      />
+    </div>
+    <div
+      className="w-50 d-flex flex-column justify-content-center"
+    >
+      <h2>
+        COVID Statistics
+      </h2>
+      <p>
+        From Around the World
+      </p>
+    </div>
+  </div>
+  <div
+    className="mid-section"
+  >
+    <p
+      className="m-0"
+    >
+      STATS BY CONTINENTS
+    </p>
+  </div>
+  <div
+    className="con-sec container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 odd-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="africa map"
+            className=""
+            src="Africa.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            AFRICA
+          </p>
+        </a>
+      </div>
+      <div
+        className="col-6 even-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="asia map"
+            className=""
+            src="Asia.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            ASIA
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 even-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="europe map"
+            className=""
+            src="Europe.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            EUROPE
+          </p>
+        </a>
+      </div>
+      <div
+        className="col-6 odd-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="South America map"
+            className=""
+            src="South America.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            SOUTH AMERICA
+          </p>
+        </a>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-6 odd-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="North America map"
+            className=""
+            src="North America.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            NORTH AMERICA
+          </p>
+        </a>
+      </div>
+      <div
+        className="col-6 even-sec"
+      >
+        <a
+          className="d-flex flex-column"
+          href="/country"
+          onClick={[Function]}
+        >
+          <i
+            className="bi bi-arrow-right-circle"
+          />
+          <img
+            alt="Oceania map"
+            className=""
+            src="Oceania.png"
+          />
+          <p
+            className="h3 align-self-end"
+          >
+            OCEANIA
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components Rendering Regions page correctly 1`] = `
+<div>
+  <div
+    className="main-land d-flex"
+  >
+    <div
+      className="w-50"
+    >
+      <img
+        alt="world map"
+        id="main-img"
+        src="worldMap.png"
+      />
+    </div>
+    <div
+      className="w-50"
+    >
+      <h2>
+        testing
+      </h2>
+      <p
+        className="m-0"
+      >
+        Today Deaths:
+      </p>
+      <p
+        className="m-0"
+      >
+        Today Recovered:
+      </p>
+      <p
+        className="m-0"
+      >
+        Today Cases:
+      </p>
+    </div>
+  </div>
+  <div
+    className="mid-section"
+  >
+    <p>
+      STATS BY Region
+    </p>
+  </div>
+  <ul
+    className="list-group listing"
+  />
+  <p
+    className="p-3 lead"
+  >
+    No Regions in Records
+  </p>
+</div>
+`;
+
+exports[`Series of tests rendering of each major components Rendering of Navigation bar(Header) correctly 1`] = `
+<div
+  className="navs navigator"
+>
+  <nav
+    className="navbar navbar-expand"
+  >
+    <div
+      className="container-fluid d-flex justify-content-between"
+    >
+      <button
+        className="navbar-brand navigator w-25"
+        id="tops"
+        onClick={[Function]}
+        type="button"
+      >
+        <i
+          className="bi bi-chevron-left navigator"
+        />
+        2022
+      </button>
+      <div
+        className="w-25 d-flex align-items-end"
+      >
+        <p
+          className="text-nowrap m-0"
+        >
+          COVID Metrics
+        </p>
+      </div>
+      <div
+        className="w-25"
+      >
+        <ul
+          className="navbar-nav"
+        >
+          <li
+            className="nav-item pe-4"
+          >
+            <a
+              aria-current="page"
+              className="nav-link fw-normal active"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="bi bi-mic navigator"
+              />
+            </a>
+          </li>
+          <li
+            className="nav-item pe-4"
+          >
+            <a
+              aria-current="page"
+              className="nav-link fw-normal active"
+              href="/"
+              onClick={[Function]}
+            >
+              <i
+                className="bi bi-gear navigator"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

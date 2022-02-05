@@ -23,6 +23,9 @@ COVID API where it collects and render Statictical data on death tolls, recovery
 - Gitflow
 - Visual Studio Code
 
+## Project Presentation
+[Presentation Link](https://www.loom.com/share/5e485e6f5de74f7dbb012d31c7ee19f7)
+
 ## Live Demo
 [Link]()
 

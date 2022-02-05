@@ -5,10 +5,13 @@ COVID API where it collects and render Statictical data on death tolls, recovery
 # Screenshots
 
 ## Homepage
+![Screenshot (47)](https://user-images.githubusercontent.com/71400898/152621296-a03b9717-0b1a-46b3-b02b-af818e8212f7.png)
 
 ## Countries Page
+![Screenshot (48)](https://user-images.githubusercontent.com/71400898/152621300-c20403ed-4b0d-42ea-a537-726d43d01375.png)
 
 ## Regions Page
+![Screenshot (49)](https://user-images.githubusercontent.com/71400898/152621308-f746108a-381d-4b56-a167-10396c0bfd0e.png)
 
 ## Built With
 - React-Redux

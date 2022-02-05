@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 import RegionItems from './RegionItems';

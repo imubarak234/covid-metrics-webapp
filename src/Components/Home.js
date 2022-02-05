@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import { useDispatch } from 'react-redux';
@@ -13,8 +11,6 @@ import ocean from './images/Oceania.png';
 import { select } from '../redux/Refresh/Refresh';
 
 const Home = () => {
-  // const states = useSelector((state) => state.refreshReducer, shallowEqual);
-
   const dispatch = useDispatch();
 
   const changes = (args) => {

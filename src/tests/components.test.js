@@ -5,8 +5,8 @@ import { MemoryRouter, BrowserRouter } from 'react-router-dom';
 import store from '../redux/configureStore';
 import Naving from '../Components/Navbar';
 import Home from '../Components/Home';
-import Region from '../Components/Regions/Region';
-import CountryPage from '../Components/Country/Country-page';
+import Region from '../Components/Regions/RegionContainer';
+import CountryPage from '../Components/Country/CountryContainer';
 
 describe('Series of tests rendering of each major components', () => {
   it('Rendering of Navigation bar(Header) correctly', () => {

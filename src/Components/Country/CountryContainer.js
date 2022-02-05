@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 import React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import CountryItems from './CountryItems';

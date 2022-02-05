@@ -49,9 +49,10 @@ Feel free to check the [issues page](../../issues/).
 
 Give a :star:️ if you like this project!
 ## Acknowledgments
-
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
 ## :memo: License
 This project is [MIT]([./MIT.md](https://github.com/microverseinc/readme-template/blob/master/MIT.md)) licensed.
+The [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)[](https://github.com/microverseinc/curriculum-react-redux/blob/main/capstone/react_capstone.md#project-documentation)

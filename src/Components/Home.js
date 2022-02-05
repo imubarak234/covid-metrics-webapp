@@ -24,10 +24,10 @@ const Home = () => {
   return (
     <div>
       <div className="main-land d-flex">
-        <div className="w-50">
-          <img src={world} alt="world map" id="main-img" className="pe-3" />
+        <div className="w-50 d-flex align-content-center">
+          <img src={world} alt="world map" id="main-img" />
         </div>
-        <div className="w-50">
+        <div className="w-50 d-flex flex-column justify-content-center">
           <h2>COVID Statistics</h2>
           <p>From Around the World</p>
         </div>

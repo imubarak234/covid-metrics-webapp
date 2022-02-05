@@ -3,6 +3,7 @@
 import React from 'react';
 import { useSelector, shallowEqual } from 'react-redux';
 import RegionItems from './RegionItems';
+import logo from '../images/worldMap.png';
 
 const Region = () => {
   const states = useSelector((state) => state.dataReducer, shallowEqual);
@@ -30,20 +31,20 @@ const Region = () => {
     <div>
       <div className="main-land d-flex">
         <div className="w-50">
-          <img src="" alt="world map" id="main-img" className="pe-3" />
+          <img src={logo} alt="world map" id="main-img" />
         </div>
         <div className="w-50">
           <h2>{newerState.name}</h2>
           <p className="m-0">
-            Today Total Deaths:
+            Today Deaths:
             {newerState.today_deaths}
           </p>
           <p className="m-0">
-            Today Total Recovered:
+            Today Recovered:
             {newerState.today_recovered}
           </p>
           <p className="m-0">
-            Today Total Cases:
+            Today Cases:
             {newerState.today_recovered}
           </p>
         </div>

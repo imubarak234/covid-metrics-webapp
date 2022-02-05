@@ -1,20 +1,6 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 body,
@@ -25,12 +11,15 @@ html {
 #root {
   background-color: #4369b2;
   height: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 code {
@@ -45,6 +34,7 @@ code {
 
 .navigator {
   color: white;
+  border: #35548b;
 }
 
 #main-img {
@@ -81,18 +71,21 @@ code {
 
 .con-sec .odd-sec,
 .listing .odd-sec {
+  color: white;
   background-color: #4369b0;
   border-color: #4369b0;
 }
 
 .con-sec .even-sec,
 .listing .even-sec {
+  color: white;
   background-color: #3f62a4;
   border-color: #3f62a4;
 }
 
 .con-sec .odd-sec,
 .con-sec .even-sec {
+  color: white;
   height: 18vh;
 }
 

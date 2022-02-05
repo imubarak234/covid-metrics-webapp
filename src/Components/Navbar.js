@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 
 const Naving = () => {
   const navigate = useNavigate();
-  // console.log(history);
+
   return (
     <div className="navs navigator">
       <nav className="navbar navbar-expand">

@@ -20,8 +20,8 @@ const CountryPage = () => {
 
   const changes = (next) => {
     let ans = '';
-    if ((next % 2) === 0) ans = 'even-sec list-group-item list-group-item-action';
-    else ans = 'odd-sec list-group-item list-group-item-action';
+    if ((next % 2) === 0) ans = 'even-sec list-group-item list-group-item-action d-flex justify-content-between px-4';
+    else ans = 'odd-sec list-group-item list-group-item-action d-flex justify-content-between px-4';
     return ans;
   };
 
@@ -40,9 +40,9 @@ const CountryPage = () => {
     <div>
       <div className="main-land d-flex">
         <div className="w-50">
-          <img src={`${process.env.PUBLIC_URL}${photo(newState[0].continent)}`} alt="world map" id="main-img" className="pe-3" />
+          <img src={`${process.env.PUBLIC_URL}${photo(newState[0].continent)}`} alt="world map" id="main-img" />
         </div>
-        <div className="w-50">
+        <div className="w-50 d-flex flex-column justify-content-center">
           <h2>{newState[0].continent}</h2>
         </div>
       </div>

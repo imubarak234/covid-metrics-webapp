@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 
+/**
+ * Renders a Navigation bar Top screen
+ */
 const Naving = () => {
   const navigate = useNavigate();
 

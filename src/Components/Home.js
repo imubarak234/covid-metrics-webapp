@@ -10,9 +10,18 @@ import north from './images/North America.png';
 import ocean from './images/Oceania.png';
 import { select } from '../redux/Refresh/Refresh';
 
+/**
+ * The home component renders a landing page with
+ * with links, continents and images 
+ */
 const Home = () => {
   const dispatch = useDispatch();
 
+  /**
+   * @function fresh - Dispatches the redux action to select a continent from 
+   * the store.
+   * @param {string} args - the id of the selected continent 
+   */
   const changes = (args) => {
     dispatch(select(args));
   };

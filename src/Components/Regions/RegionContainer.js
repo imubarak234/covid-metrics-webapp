@@ -3,6 +3,10 @@ import { useSelector, shallowEqual } from 'react-redux';
 import RegionItems from './RegionItems';
 import logo from '../images/worldMap.png';
 
+/**
+ * The Region Container sorts the regions and COVID
+ * statistics and displays it.   
+ */
 const Region = () => {
   const states = useSelector((state) => state.dataReducer, shallowEqual);
 
@@ -11,6 +15,10 @@ const Region = () => {
 
   let newerState = newState[0];
 
+  /**
+   * A check to assign an empty array if the value
+   * from the store is undefined.
+   */
   if (newerState === undefined) {
     newerState = {
       name: 'testing',
@@ -18,6 +26,12 @@ const Region = () => {
     };
   }
 
+  /**
+   * @function changes - handles assigning bootstrap class to given
+   * sections
+   * @param {number} next - count even or odd 
+   * @returns {string} - bootstrap classes
+   */
   const changes = (next) => {
     let ans = '';
     if ((next % 2) === 0) ans = 'even-sec list-group-item list-group-item-action';

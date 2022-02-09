@@ -3,6 +3,10 @@ import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import CountryItems from './CountryItems';
 import { selecting } from '../../redux/Data';
 
+/**
+ * The country container handles the sorting and displaying
+ * of list of countries to be rendered to the DOM
+ */
 const CountryPage = () => {
   const states = useSelector((state) => state.refreshReducer, shallowEqual);
 
@@ -12,10 +16,21 @@ const CountryPage = () => {
 
   const dispatch = useDispatch();
 
+  /**
+   * @function fresh - Dispatches the redux action to select a country from 
+   * the store.
+   * @param {string} args - the id of the selected country 
+   */
   const fresh = (args) => {
     dispatch(selecting(args));
   };
 
+  /**
+   * @function changes - handles assigning bootstrap class to given
+   * sections
+   * @param {number} next - count even or odd 
+   * @returns {string} - bootstrap classes
+   */
   const changes = (next) => {
     let ans = '';
     if ((next % 2) === 0) ans = 'even-sec list-group-item list-group-item-action d-flex justify-content-between px-4';
@@ -23,6 +38,11 @@ const CountryPage = () => {
     return ans;
   };
 
+  /**
+   * @function photo - Controls which photo is to be displayed on the page
+   * @param {string} args - the title of picture to display.
+   * @returns {string} - file path of the selected picture. 
+   */
   const photo = (args) => {
     let ans = '';
     if (args === 'Africa') ans = '/assets/images/Africa.png';

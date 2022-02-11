@@ -1,3 +1,5 @@
+// Data on continents and countries to be sorted and rendered
+
 const data = [
   {
     id: 1,

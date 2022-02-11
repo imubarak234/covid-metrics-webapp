@@ -27,7 +27,7 @@ COVID API where it collects and render Statictical data on death tolls, recovery
 [Presentation Link](https://www.loom.com/share/5e485e6f5de74f7dbb012d31c7ee19f7)
 
 ## Live Demo
-[Link]()
+[Link](https://covid-metrics-webapp.herokuapp.com/)
 
 ## Getting Started
 **To clone this project**

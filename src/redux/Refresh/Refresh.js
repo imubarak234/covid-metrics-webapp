@@ -1,7 +1,7 @@
 const ADD_DATA = 'covid-metrics-webapp/Refresh/ADD_DATA';
 const SELECT = 'covid-metrics-webapp/Refresh/SELECT';
 
-//The intial state of store with the refresh reducer
+// The intial state of store with the refresh reducer
 const initialState = [];
 
 /**
@@ -25,9 +25,9 @@ export const select = (payload) => ({
 /**
  * @function refreshReducer - using a switch state the function handles specific returns
  * based on specific arguments the result of which manipulates the redux store.
- * @param {Array} state - the array of the present redux store 
- * @param {Function} action 
- * @returns 
+ * @param {Array} state - the array of the present redux store
+ * @param {Function} action
+ * @returns
  */
 const refreshReducer = (state = initialState, action) => {
   switch (action.type) {

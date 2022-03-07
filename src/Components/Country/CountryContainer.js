@@ -17,9 +17,9 @@ const CountryPage = () => {
   const dispatch = useDispatch();
 
   /**
-   * @function fresh - Dispatches the redux action to select a country from 
+   * @function fresh - Dispatches the redux action to select a country from
    * the store.
-   * @param {string} args - the id of the selected country 
+   * @param {string} args - the id of the selected country
    */
   const fresh = (args) => {
     dispatch(selecting(args));
@@ -28,7 +28,7 @@ const CountryPage = () => {
   /**
    * @function changes - handles assigning bootstrap class to given
    * sections
-   * @param {number} next - count even or odd 
+   * @param {number} next - count even or odd
    * @returns {string} - bootstrap classes
    */
   const changes = (next) => {
@@ -41,7 +41,7 @@ const CountryPage = () => {
   /**
    * @function photo - Controls which photo is to be displayed on the page
    * @param {string} args - the title of picture to display.
-   * @returns {string} - file path of the selected picture. 
+   * @returns {string} - file path of the selected picture.
    */
   const photo = (args) => {
     let ans = '';

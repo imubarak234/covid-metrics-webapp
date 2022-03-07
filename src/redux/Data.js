@@ -1,7 +1,7 @@
 const ADD_DATA = 'covid-metrics-webapp/Data/ADD_DATA';
 const SELECTING = 'covid-metrics-webapp/Data/SELECTING';
 
-//The intial state of store with the data reducer
+// The intial state of store with the data reducer
 const initialState = [];
 
 /**
@@ -25,9 +25,9 @@ export const selecting = (payload) => ({
 /**
  * @function dataReducer - using a switch state the function handles specific returns
  * based on specific arguments the result of which manipulates the redux store.
- * @param {Array} state - the array of the present redux store 
- * @param {Function} action - A function from the other functions in this file  
- * @returns 
+ * @param {Array} state - the array of the present redux store
+ * @param {Function} action - A function from the other functions in this file
+ * @returns
  */
 const dataReducer = (state = initialState, action) => {
   switch (action.type) {

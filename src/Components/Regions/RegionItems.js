@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * Region Items function takes given props arguments 
+ * Region Items function takes given props arguments
  * and renders it to the DOM
- * @param {props} names - The title of type string 
- * @param {props} deaths - The number of COVID deaths for the region/country 
- * @param {props} recovered - The number of COVID recovered cases for the region/country 
- * @param {props} cases - The number of COVID on going cases for the region/country 
+ * @param {props} names - The title of type string
+ * @param {props} deaths - The number of COVID deaths for the region/country
+ * @param {props} recovered - The number of COVID recovered cases for the region/country
+ * @param {props} cases - The number of COVID on going cases for the region/country
  * @param {props} classes - String representation of bootstrap classes
- * @returns 
+ * @returns
  */
 const RegionItems = (props) => {
   const {

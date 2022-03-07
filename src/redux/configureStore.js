@@ -1,8 +1,8 @@
 /* eslint-disable no-restricted-syntax */
 
 /**
- * @file configureStore - This file contains the redux store 
- * The Main reducer which is a combination of the both the dataReducer 
+ * @file configureStore - This file contains the redux store
+ * The Main reducer which is a combination of the both the dataReducer
  * and refreshReducer. The fetch function to the COVID API and a sort
  * method to proper;y sort the recieved data.
  */
@@ -15,7 +15,7 @@ import data from './Refresh/RefreshData';
 
 /**
  * @const reducer - The combine reducers of dataReducer
- * refreshReducer 
+ * refreshReducer
  */
 const reducer = combineReducers({
   dataReducer,
@@ -54,7 +54,7 @@ const sort = (obj) => {
 };
 
 /**
- * @function fetchData - Fetchs COVID data from API and sorts it using 
+ * @function fetchData - Fetchs COVID data from API and sorts it using
  * the sort function.
  */
 export const fetchData = async () => {

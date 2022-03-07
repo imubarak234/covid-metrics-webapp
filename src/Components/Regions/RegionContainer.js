@@ -5,7 +5,7 @@ import logo from '../images/worldMap.png';
 
 /**
  * The Region Container sorts the regions and COVID
- * statistics and displays it.   
+ * statistics and displays it.
  */
 const Region = () => {
   const states = useSelector((state) => state.dataReducer, shallowEqual);
@@ -29,7 +29,7 @@ const Region = () => {
   /**
    * @function changes - handles assigning bootstrap class to given
    * sections
-   * @param {number} next - count even or odd 
+   * @param {number} next - count even or odd
    * @returns {string} - bootstrap classes
    */
   const changes = (next) => {

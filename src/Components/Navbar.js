@@ -25,7 +25,7 @@ const Naving = () => {
                   <i className="bi bi-mic navigator" />
                 </NavLink>
               </li>
-              <li className="nav-item pe-4">
+              <li className="nav-item">
                 <NavLink className="nav-link fw-normal" to="/">
                   <i className="bi bi-gear navigator" />
                 </NavLink>

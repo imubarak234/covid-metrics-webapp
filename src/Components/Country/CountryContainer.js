@@ -2,6 +2,12 @@ import React from 'react';
 import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import CountryItems from './CountryItems';
 import { selecting } from '../../redux/Data';
+import asia from '../images/Asia.png';
+import africa from '../images/Africa.png';
+import euro from '../images/Europe.png';
+import south from '../images/South_America.png';
+import north from '../images/North_America.png';
+import ocean from '../images/Oceania.png';
 
 /**
  * The country container handles the sorting and displaying
@@ -43,22 +49,43 @@ const CountryPage = () => {
    * @param {string} args - the title of picture to display.
    * @returns {string} - file path of the selected picture.
    */
-  const photo = (args) => {
-    let ans = '';
-    if (args === 'Africa') ans = '/assets/images/Africa.png';
-    else if (args === 'Europe') ans = '/assets/images/Europe.png';
-    else if (args === 'Asia') ans = '/assets/images/Asia.png';
-    else if (args === 'Oceania') ans = '/assets/images/Oceania.png';
-    else if (args === 'South America') ans = '/assets/images/South America.png';
-    else if (args === 'North America') ans = '/assets/images/North America.png';
-    return ans;
+  // const photo = (args) => {
+  //    let ans = '';
+  //    if (args === 'Africa') ans = '/assets/images/Africa.png';
+  //    else if (args === 'Europe') ans = '/assets/images/Europe.png';
+  //    else if (args === 'Asia') ans = '/assets/images/Asia.png';
+  //    else if (args === 'Oceania') ans = '/assets/images/Oceania.png';
+  //    else if (args === 'South America') ans = '/assets/images/South America.png';
+  //    else if (args === 'North America') ans = '/assets/images/North America.png';
+  //    return ans;
+  //  };
+
+  const photo = () => {
+    if (newState[0].continent === 'Asia') return asia;
+    if (newState[0].continent === 'Europe') return euro;
+    if (newState[0].continent === 'Oceania') return ocean;
+    if (newState[0].continent === 'South America') return south;
+    if (newState[0].continent === 'North America') return north;
+    if (newState[0].continent === 'Africa') return africa;
+    return '';
   };
 
   return (
     <div>
       <div className="main-land d-flex">
         <div className="w-50">
-          <img src={`${process.env.PUBLIC_URL}${photo(newState[0].continent)}`} alt="world map" id="main-img" />
+          {/* <img src={`${process.env.PUBLIC_URL}${photo(newState[0].continent)}`}
+          alt="world map" className="w-100 h-100" /> */}
+          <div
+            id="img-country"
+            style={{
+              backgroundImage: `url(${photo()})`,
+              width: '100%',
+              height: '100%',
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
         </div>
         <div className="w-50 d-flex flex-column justify-content-center">
           <h2>{newState[0].continent}</h2>

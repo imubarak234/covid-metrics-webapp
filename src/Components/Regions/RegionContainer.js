@@ -43,7 +43,7 @@ const Region = () => {
     <div>
       <div className="main-land d-flex">
         <div className="w-50">
-          <img src={logo} alt="world map" id="main-img" />
+          <img src={logo} alt="world map" id="main-img" className="img-fluid" />
         </div>
         <div className="w-50">
           <h2>{newerState.name}</h2>

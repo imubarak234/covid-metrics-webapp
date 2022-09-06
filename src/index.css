@@ -1,12 +1,10 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  border: 2px solid red;
 }
 
-body,
-html {
-  height: 100%;
-}
+
 
 #root {
   background-color: #4369b2;
@@ -37,13 +35,20 @@ code {
   border: #35548b;
 }
 
-#main-img {
-  width: 10em;
-}
+
 
 .main-land {
   background-color: #5586e2;
-  height: 15vh;
+  height: 33vh;
+}
+
+.main-land h2 {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.main-land p {
+  font-size: 2em;
 }
 
 .mid-section {
